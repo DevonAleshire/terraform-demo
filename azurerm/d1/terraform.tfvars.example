@@ -1,0 +1,10 @@
+
+#Use Azure CLI command: az account list --output table
+#Will list current subscriptionIds registered to user
+azure_subscriptionId="Insert Subsctiption Id"
+
+#Use Azure CLI Command: az ad sp create-for-rbac --name <Name of SP>
+#Will create a new service principal under AAD for current subscription
+azure_appId="Insert Service Principal AppId"
+azure_password="Insert Service Principal Password"
+azure_tenant="Insert Service Principal Tenant"
