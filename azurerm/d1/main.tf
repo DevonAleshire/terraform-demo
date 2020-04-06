@@ -94,6 +94,11 @@ resource "azurerm_linux_virtual_machine" "tf-demo" {
   size                  = "Standard_D1"
   network_interface_ids = [azurerm_network_interface.tf-demo.id]
 
+ /*
+* NOTE: It is very poor practice to hardcode sensitive information
+* such as user name, password, etc. Hardcoded values are used here
+* only to simplify the tutorial.
+*/
   admin_username        = "adminuser"
   admin_password        = "Password1234!"
   disable_password_authentication = false
