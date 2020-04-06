@@ -100,7 +100,7 @@ resource "azurerm_linux_virtual_machine" "tf-demo" {
 
   # admin_ssh_key {
   #   username   = "adminuser"
-  #   public_key = file("./authorizedkey")
+  #   public_key = file("../../.ssh/authorizedkey")
   # }
 
   os_disk {
